@@ -24,4 +24,4 @@ def is_palindrome_queue(string):
 Test code can go below if you want
 '''
 if __name__ == '__main__':
-    #Test code goes here
+    pass
