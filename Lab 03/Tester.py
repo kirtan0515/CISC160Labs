@@ -59,35 +59,35 @@ except RPNError:
     print("GOOD! RPNError caught!")
 except:
     print("Bad. Should be an RPNError.")
-    
+
 try:
     print("'1 2 + 5 6 * + 8': SHOULD ERROR = " + str(postfix_calculator("1 2 + 5 6 * + 8")))
 except RPNError:
     print("GOOD! RPNError caught!")
 except:
     print("Bad. Should be an RPNError.")
-    
+
 try:
     print("'1 2 + 5 6 * + 8 + +': SHOULD ERROR = " + str(postfix_calculator("1 2 + 5 6 * + 8 + +")))
 except RPNError:
     print("GOOD! RPNError caught!")
 except:
     print("Bad. Should be an RPNError.")
-    
+
 try:
     print("'': SHOULD ERROR = " + str(postfix_calculator("")))
 except RPNError:
     print("GOOD! RPNError caught!")
 except:
     print("Bad. Should be an RPNError.")
-    
+
 try:
     print("'pass': SHOULD ERROR = " + str(postfix_calculator("pass")))
 except RPNError:
     print("GOOD! RPNError caught!")
 except:
     print("Bad. Should be an RPNError.")
-    
+
 try:
     print("'1 2 ÷ 5 6 × ×': SHOULD ERROR = " + str(postfix_calculator("1 2 ÷ 5 6 × ×")))
 except RPNError:
