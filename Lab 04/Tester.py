@@ -8,7 +8,7 @@ from LinkedTreeFunctions import _print_tree_inorder
 
 pause = False
 
-#I) Test the BinaryNode object
+# I) Test the BinaryNode object
 print("-------------------------------------------")
 print("I) Test the BinaryNode object")
 print("-------------------------------------------")
@@ -45,7 +45,7 @@ print("Taco:\t" + str(b1.get_left().get_parent().get_right().get_left().get_elem
 if pause:
     input()
 
-#II) Test the insert function with integers
+# II) Test the insert function with integers
 print("-------------------------------------------")
 print("II) Test the insert function with integers")
 print("-------------------------------------------")
@@ -135,11 +135,10 @@ root = insert(root, 14)
 print("| 2 -> 5 -> 6 -> 8 -> 10 -> 10 -> 12 -> 13 -> 14 -> 15 -> 20 |")
 _print_tree_inorder(root)
 
-
 if pause:
     input()
 
-#III) Test the insert function with strings
+# III) Test the insert function with strings
 print("-------------------------------------------")
 print("III) Test the insert function with strings")
 print("-------------------------------------------")
@@ -204,13 +203,15 @@ if pause:
     input()
 
 root2 = insert(root2, "Winston Zeddemore")
-print("| Dana Barrett -> Egon Spengler -> Louis Tully -> Peter Venkman -> Ray Stanz\n\t-> Walter Peck -> Winston Zeddemore -> Zuul |")
+print(
+    "| Dana Barrett -> Egon Spengler -> Louis Tully -> Peter Venkman -> Ray Stanz\n\t-> Walter Peck -> Winston Zeddemore -> Zuul |")
 _print_tree_inorder(root2)
 
 print("\n-------\n")
 
 root2 = insert(root2, "Janine Melnitz")
-print("| Dana Barrett -> Egon Spengler -> Janine Melnitz -> Louis Tully ->\n\tPeter Venkman -> Ray Stanz -> Walter Peck -> Winston Zeddemore -> Zuul |")
+print(
+    "| Dana Barrett -> Egon Spengler -> Janine Melnitz -> Louis Tully ->\n\tPeter Venkman -> Ray Stanz -> Walter Peck -> Winston Zeddemore -> Zuul |")
 _print_tree_inorder(root2)
 
 print("\n-------")
@@ -219,13 +220,15 @@ if pause:
     input()
 
 root2 = insert(root2, "Slimer")
-print("| Dana Barrett -> Egon Spengler -> Janine Melnitz -> Louis Tully ->\n\tPeter Venkman -> Ray Stanz -> Slimer -> Walter Peck ->\n\tWinston Zeddemore -> Zuul |")
+print(
+    "| Dana Barrett -> Egon Spengler -> Janine Melnitz -> Louis Tully ->\n\tPeter Venkman -> Ray Stanz -> Slimer -> Walter Peck ->\n\tWinston Zeddemore -> Zuul |")
 _print_tree_inorder(root2)
 
 print("\n-------\n")
 
 root2 = insert(root2, "Gozer the Gozerian")
-print("| Dana Barrett -> Egon Spengler -> Gozer the Gozerian ->\n\tJanine Melnitz -> Louis Tully -> Peter Venkman -> Ray Stanz ->\n\tSlimer -> Walter Peck -> Winston Zeddemore -> Zuul |")
+print(
+    "| Dana Barrett -> Egon Spengler -> Gozer the Gozerian ->\n\tJanine Melnitz -> Louis Tully -> Peter Venkman -> Ray Stanz ->\n\tSlimer -> Walter Peck -> Winston Zeddemore -> Zuul |")
 _print_tree_inorder(root2)
 
 print("\n-------")
@@ -234,13 +237,15 @@ if pause:
     input()
 
 root2 = insert(root2, "Vigo the Carpathian")
-print("| Dana Barrett -> Egon Spengler -> Gozer the Gozerian ->\n\tJanine Melnitz -> Louis Tully -> Peter Venkman -> Ray Stanz ->\n\tSlimer -> Vigo the Carpathian -> Walter Peck -> Winston Zeddemore ->\n\tZuul |")
+print(
+    "| Dana Barrett -> Egon Spengler -> Gozer the Gozerian ->\n\tJanine Melnitz -> Louis Tully -> Peter Venkman -> Ray Stanz ->\n\tSlimer -> Vigo the Carpathian -> Walter Peck -> Winston Zeddemore ->\n\tZuul |")
 _print_tree_inorder(root2)
 
 print("\n-------\n")
 
 root2 = insert(root2, "Janosz Poha")
-print("| Dana Barrett -> Egon Spengler -> Gozer the Gozerian ->\n\tJanine Melnitz -> Janosz Poha -> Louis Tully -> Peter Venkman ->\n\tRay Stanz -> Slimer -> Vigo the Carpathian -> Walter Peck ->\n\tWinston Zeddemore -> Zuul |")
+print(
+    "| Dana Barrett -> Egon Spengler -> Gozer the Gozerian ->\n\tJanine Melnitz -> Janosz Poha -> Louis Tully -> Peter Venkman ->\n\tRay Stanz -> Slimer -> Vigo the Carpathian -> Walter Peck ->\n\tWinston Zeddemore -> Zuul |")
 _print_tree_inorder(root2)
 
 print("\n-------")
@@ -249,14 +254,14 @@ if pause:
     input()
 
 root2 = insert(root2, "Oscar")
-print("| Dana Barrett -> Egon Spengler -> Gozer the Gozerian ->\n\tJanine Melnitz -> Janosz Poha -> Louis Tully -> Oscar ->\n\tPeter Venkman -> Ray Stanz -> Slimer -> Vigo the Carpathian ->\n\tWalter Peck -> Winston Zeddemore -> Zuul |")
+print(
+    "| Dana Barrett -> Egon Spengler -> Gozer the Gozerian ->\n\tJanine Melnitz -> Janosz Poha -> Louis Tully -> Oscar ->\n\tPeter Venkman -> Ray Stanz -> Slimer -> Vigo the Carpathian ->\n\tWalter Peck -> Winston Zeddemore -> Zuul |")
 _print_tree_inorder(root2)
-
 
 if pause:
     input()
 
-#IV) Test the full tree construction
+# IV) Test the full tree construction
 print("-------------------------------------------")
 print("#IV) Test the full tree construction")
 print("-------------------------------------------")
@@ -270,7 +275,7 @@ print("None:\t" + str(node13.get_parent().get_parent().get_parent().get_parent()
 
 print()
 
-nodeGozer  = root2.get_left().get_right().get_right().get_left()
+nodeGozer = root2.get_left().get_right().get_right().get_left()
 print("Gozer:\t" + str(nodeGozer.get_element()))
 print("Janine:\t" + str(nodeGozer.get_parent().get_element()))
 print("Egon:\t" + str(nodeGozer.get_parent().get_parent().get_element()))
@@ -293,11 +298,10 @@ print()
 if pause:
     input()
 
-#IV) Test the iterative path function
+# IV) Test the iterative path function
 print("-------------------------------------------")
 print("#IV) Test the iterative path function")
 print("-------------------------------------------")
-
 
 print("10, 15, 12, 13, 14\t= " + str(iterative_path(root, 14)))
 print("10, 15, 20\t\t= " + str(iterative_path(root, 20)))
@@ -326,11 +330,10 @@ print()
 if pause:
     input()
 
-#V) Test the recursive path function
+# V) Test the recursive path function
 print("-------------------------------------------")
 print("#V) Test the recursive path function")
 print("-------------------------------------------")
-
 
 print("10, 15, 12, 13, 14\t= " + str(recursive_path(root, 14)))
 print("10, 15, 20\t\t= " + str(recursive_path(root, 20)))
@@ -355,6 +358,3 @@ print("None\t\t\t\t= " + str(recursive_path(root2, "Larry King")))
 print("None\t\t\t\t= " + str(recursive_path(root2, "Bobby Brown")))
 print("None\t\t\t\t= " + str(recursive_path(root2, "Cheech Marin")))
 print()
-
-
-
