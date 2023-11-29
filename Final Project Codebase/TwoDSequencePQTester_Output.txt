@@ -1,0 +1,146 @@
+Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:43:08) [MSC v.1926 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+= RESTART: C:\Users\BGrey.HU\OneDrive - Harrisburg University\General Course Resources\CISC 160 - Data Structures\Finals\Answer Key\TwoDSequencePQTester.py
+------------------------------------------------------------
+7.1) Test the TwoDSequencePQ constructor
+------------------------------------------------------------
+len:      0	= 0
+is_empty: True	= True
+
+------------------------------------------------------------
+7.2) Test accessing an empty TwoDSequencePQ
+------------------------------------------------------------
+None:	= None (via exception)
+None:	= None (via exception)
+
+------------------------------------------------------------
+7.3) Test the TwoDSequencePQ add method with ints keys
+------------------------------------------------------------
+len:      1			    = 1
+is_empty: False			    = False
+min:      (5, 10)		    = (5, 10)
+
+len:      2			    = 2
+is_empty: False			    = False
+min:      (2, 1)		    = (2, 1)
+
+len:      3			    = 3
+is_empty: False			    = False
+min:      (2, 1)		    = (2, 1)
+
+len:      4			    = 4
+is_empty: False			    = False
+min:      (2, 1)		    = (2, 1)
+
+len:      5			    = 5
+is_empty: False			    = False
+min:      (0, 'Should be second')   = (0, 'Should be second')
+
+len:      6			    = 6
+is_empty: False			    = False
+min:      (0, 'Should be second')   = (0, 'Should be second')
+len:      7			    = 7
+is_empty: False			    = False
+min:      (0, 'Should be second')   = (0, 'Should be second')
+
+len:      8			    = 8
+is_empty: False			    = False
+min:      (0, 'Should be <either>') = (0, 'Should be second')
+
+len:      9			    = 9
+is_empty: False			    = False
+min:      (0, 'Should be <either>') = (0, 'Should be second')
+
+len:      10			    = 10
+is_empty: False			    = False
+min:      (0, 'Should be <either>') = (0, 'Should be second')
+
+len:      11			    = 11
+is_empty: False			    = False
+min:      (0, 'Should be <either>') = (0, 'Should be second')
+
+
+------------------------------------------------------------
+7.4) Test the TwoDSequencePQ min and remove_min methods
+------------------------------------------------------------
+remove_min: (0, 'Should be <either>')	= (0, 'Should be second')
+len:        10				= 10
+is_empty:   False			= False
+
+min:        (0, 'Should be <either>')	= (0, 'Should be first')
+remove_min: (0, 'Should be <either>')	= (0, 'Should be first')
+len:        9				= 9
+is_empty:   False			= False
+
+min:        (1, ['A', 'list', 'of', 'stuff'])
+	  = (1, ['A', 'list', 'of', 'stuff'])
+remove_min: (1, ['A', 'list', 'of', 'stuff'])
+	  = (1, ['A', 'list', 'of', 'stuff'])
+len:        8				= 8
+is_empty:   False			= False
+
+min:        (2, 1)			= (2, 1)
+remove_min: (2, 1)			= (2, 1)
+len:        7				= 7
+is_empty:   False			= False
+
+min:        (5, 10)			= (5, 10)
+remove_min: (5, 10)			= (5, 10)
+len:        6				= 6
+is_empty:   False			= False
+
+min:        (10, 'Baklava')	= (10, 'Baklava')
+remove_min: (10, 'Baklava')	= (10, 'Baklava')
+len:        5				= 5
+is_empty:   False			= False
+
+min:        (14, Weird, right?')	= (14, 'Weird, right?')
+remove_min: (14, Weird, right?')	= (14, 'Weird, right?')
+len:        4				= 4
+is_empty:   False			= False
+
+min:        (15, '¡Top!')		= (15, '¡Top!')
+remove_min: (15, '¡Top!')		= (15, '¡Top!')
+len:        3				= 3
+is_empty:   False			= False
+
+min:        (23, 'My Password is Taco')	= (23, 'My Password is Taco')
+remove_min: (23, 'My Password is Taco')	= (23, 'My Password is Taco')
+len:        2				= 2
+is_empty:   False			= False
+
+min:        (47, 555.55)		= (47, 555.55)
+remove_min: (47, 555.55)		= (47, 555.55)
+len:        1				= 1
+is_empty:   False			= False
+
+min:        (123, 'Last')		= (123, 'Last')
+remove_min: (123, 'Last')		= (123, 'Last')
+len:        0				= 0
+is_empty:   True			= True
+
+------------------------------------------------------------
+7.5) Try to test the underlying heap structure. MAY NOT WORK!
+     NOTE: Only populated priorities will print!
+           If nothing is at a given priority, it will be skipped.
+------------------------------------------------------------
+Key: 0; Values: ['Should be second', 'Should be first']
+Key: 1; Values: [['A', 'list', 'of', 'stuff']]
+Key: 2; Values: [1]
+Key: 5; Values: [10]
+Key: 10; Values: ['Baklava']
+Key: 14; Values: ['Weird, right?']
+Key: 15; Values: ['¡Top!']
+Key: 23; Values: ['My Password is Taco']
+Key: 47; Values: [555.55]
+Key: 123; Values: ['Last']
+
+------------------------------------------------------------
+7.6) Test the various key types that shouldn't be allowed
+------------------------------------------------------------
+Good. Float key value failed. (Exception)
+Good. String key value of an integer failed. (Exception)
+Good. String key value failed. (Exception)
+Good. Negative key value failed. (Exception)
+>>> 
