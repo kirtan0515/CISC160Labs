@@ -4,7 +4,7 @@
 
 from TreeHeapPQ import TreeHeapPQ
 
-#5.1) Test the TreeHeapPQ constructor
+# 5.1) Test the TreeHeapPQ constructor
 print("------------------------------------------------------------")
 print("5.1) Test the TreeHeapPQ constructor")
 print("------------------------------------------------------------")
@@ -20,7 +20,7 @@ if pause:
 else:
     print()
 
-#5.2) Test accessing an empty TreeHeapPQ
+# 5.2) Test accessing an empty TreeHeapPQ
 print("------------------------------------------------------------")
 print("5.2) Test accessing an empty TreeHeapPQ")
 print("------------------------------------------------------------")
@@ -40,7 +40,7 @@ if pause:
 else:
     print()
 
-#5.3) Test the TreeHeapPQ add method with ints as keys
+# 5.3) Test the TreeHeapPQ add method with ints as keys
 print("------------------------------------------------------------")
 print("5.3) Test the TreeHeapPQ add method with ints keys")
 print("------------------------------------------------------------")
@@ -133,11 +133,10 @@ if pause:
 else:
     print()
 
-#5.4) Test the TreeHeapPQ min and remove_min methods
+# 5.4) Test the TreeHeapPQ min and remove_min methods
 print("------------------------------------------------------------")
 print("5.4) Test the TreeHeapPQ min and remove_min methods")
 print("------------------------------------------------------------")
-
 
 print("remove_min: (-15, '¡Top!')\t\t= " + str(pq.remove_min()))
 print("len:        10\t\t\t\t= " + str(len(pq)))
@@ -212,7 +211,7 @@ if pause:
 else:
     print()
 
-#5.5) Test the TreeHeapPQ add method with floats as keys
+# 5.5) Test the TreeHeapPQ add method with floats as keys
 print("------------------------------------------------------------")
 print("5.5) Test the TreeHeapPQ add method floats as keys")
 print("------------------------------------------------------------")
@@ -262,7 +261,7 @@ if pause:
 else:
     print()
 
-#5.6) Test the TreeHeapPQ add method with strings as keys
+# 5.6) Test the TreeHeapPQ add method with strings as keys
 print("------------------------------------------------------------")
 print("5.6) Test the TreeHeapPQ add method strings as keys")
 print("------------------------------------------------------------")
@@ -310,7 +309,7 @@ if pause:
 else:
     print()
 
-#5.7) Try to test the underlying heap structure. MAY NOT WORK!
+# 5.7) Try to test the underlying heap structure. MAY NOT WORK!
 print("------------------------------------------------------------")
 print("5.7) Try to test the underlying heap structure. MAY NOT WORK!")
 print("------------------------------------------------------------")
@@ -418,17 +417,17 @@ if pointer is None:
 if pointer == None:
     print("Root node unidentified. Check the internal structure.")
 else:
-    #If the element in the pointer is None, then assume that the solution
+    # If the element in the pointer is None, then assume that the solution
     #   is using a sentinel node. Figure out the populated link and move the
     #   the pointer to that node
     if pointer.get_element() is None:
-        if not(pointer.get_left() is None):
+        if not (pointer.get_left() is None):
             pointer = pointer.get_left()
-        elif not(pointer.get_right() is None):
+        elif not (pointer.get_right() is None):
             pointer = pointer.get_right()
-        elif not(pointer.get_parent() is None):
+        elif not (pointer.get_parent() is None):
             pointer = pointer.get_parent()
-    
+
     print("Element of each node will be printed each time it's seen")
     print("\tusing a depth-first search")
     print("------------------------------------------------------------")

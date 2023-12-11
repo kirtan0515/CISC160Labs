@@ -4,7 +4,7 @@
 
 from LinkedHeapPQ import LinkedHeapPQ
 
-#2.1) Test the LinkedHeapPQ constructor
+# 2.1) Test the LinkedHeapPQ constructor
 print("------------------------------------------------------------")
 print("2.1) Test the LinkedHeapPQ constructor")
 print("------------------------------------------------------------")
@@ -20,7 +20,7 @@ if pause:
 else:
     print()
 
-#2.2) Test accessing an empty LinkedHeapPQ
+# 2.2) Test accessing an empty LinkedHeapPQ
 print("------------------------------------------------------------")
 print("2.2) Test accessing an empty LinkedHeapPQ")
 print("------------------------------------------------------------")
@@ -39,8 +39,8 @@ if pause:
     input()
 else:
     print()
-    
-#2.3) Test the LinkedHeapPQ add method with ints as keys
+
+# 2.3) Test the LinkedHeapPQ add method with ints as keys
 print("------------------------------------------------------------")
 print("2.3) Test the LinkedHeapPQ add method with ints keys")
 print("------------------------------------------------------------")
@@ -133,7 +133,7 @@ if pause:
 else:
     print()
 
-#2.4) Test the LinkedHeapPQ min and remove_min methods
+# 2.4) Test the LinkedHeapPQ min and remove_min methods
 print("------------------------------------------------------------")
 print("2.4) Test the LinkedHeapPQ min and remove_min methods")
 print("------------------------------------------------------------")
@@ -211,7 +211,7 @@ if pause:
 else:
     print()
 
-#2.5) Test the LinkedHeapPQ add method with floats as keys
+# 2.5) Test the LinkedHeapPQ add method with floats as keys
 print("------------------------------------------------------------")
 print("2.5) Test the LinkedHeapPQ add method floats as keys")
 print("------------------------------------------------------------")
@@ -259,7 +259,7 @@ except:
 if pause:
     input()
 
-#2.6) Test the LinkedHeapPQ add method with strings as keys
+# 2.6) Test the LinkedHeapPQ add method with strings as keys
 print("------------------------------------------------------------")
 print("2.6) Test the LinkedHeapPQ add method strings as keys")
 print("------------------------------------------------------------")
@@ -307,7 +307,7 @@ if pause:
 else:
     print()
 
-#2.7) Try to test the underlying heap structure. MAY NOT WORK!
+# 2.7) Try to test the underlying heap structure. MAY NOT WORK!
 print("------------------------------------------------------------")
 print("2.7) Try to test the underlying heap structure. MAY NOT WORK!")
 print("------------------------------------------------------------")
@@ -336,7 +336,7 @@ if pointer is None:
 
 if pointer is None:
     try:
-        pointer = pq.head
+        pointer = pq._head
     except:
         pass
 
@@ -413,19 +413,19 @@ if pointer is None:
         pass
 
 ############# DEBUG CODE FOR THE INSTRUCTOR ONLY! #############
-#from Double_Node import DNode #Uncomment first and test
-#pointer = DNode(None, None, pointer) #Uncomment first and test
-#pointer.get_next().set_previous(pointer) #Uncomment second and test
-#tail = pointer.get_next().get_next().get_next().get_next().get_next().get_next().get_next().get_next().get_next().get_next().get_next() #Uncomment third and test
-#tail.set_next(DNode(None, tail)) #Uncomment third and test
-#tail.get_next().set_previous(tail) #Uncomment third and test
-#tail.get_next().set_element("WHOOPSIE DOODLE") #Uncomment last and test
+# from Double_Node import DNode #Uncomment first and test
+# pointer = DNode(None, None, pointer) #Uncomment first and test
+# pointer.get_next().set_previous(pointer) #Uncomment second and test
+# tail = pointer.get_next().get_next().get_next().get_next().get_next().get_next().get_next().get_next().get_next().get_next().get_next() #Uncomment third and test
+# tail.set_next(DNode(None, tail)) #Uncomment third and test
+# tail.get_next().set_previous(tail) #Uncomment third and test
+# tail.get_next().set_element("WHOOPSIE DOODLE") #Uncomment last and test
 ####################### END DEBUG CODE ########################
 
 if pointer == None:
     print("Head node unidentified. Check the internal structure.")
 else:
-    #If the element in the pointer is None, set a variable appropriately
+    # If the element in the pointer is None, set a variable appropriately
     sentinel_node = (pointer.get_element() is None)
 
     print("Going forward from the head node")
@@ -434,7 +434,7 @@ else:
     if sentinel_node:
         print("Sentinel Node Used at Head")
         pointer = pointer.get_next()
-        
+
     print("(-15, '¡Top!')\t\t= " + str(pointer.get_element()))
     pointer = pointer.get_next()
     print("(-10, 'Baklava')\t= " + str(pointer.get_element()))
@@ -470,7 +470,7 @@ else:
         input()
     else:
         print()
-    
+
     print("------------------------------------------------------------")
     print("Going backward from the tail node")
     print("------------------------------------------------------------")

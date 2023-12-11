@@ -1,5 +1,6 @@
 from abc import abstractmethod, ABC
 
+
 class PriorityQueue_Interface(ABC):
 
     # Constructor. Creates a new empty priority queue.
@@ -33,7 +34,7 @@ class PriorityQueue_Interface(ABC):
     @abstractmethod
     def is_empty(self):
         pass
-    
+
     # Returns the number of elements in the priority queue
     @abstractmethod
     def __len__(self):

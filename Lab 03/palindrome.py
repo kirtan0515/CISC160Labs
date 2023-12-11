@@ -1,5 +1,3 @@
-from Stack_Interface import Stack
-from Queue_Interface import Queue
 
 
 '''
@@ -11,17 +9,18 @@ RETURNS: True if the string would be considered a palindrome, false otherwise
 
 
 def is_palindrome_stack(string):
-    s = Stack()
-    if len(string) == 0:
+    if not isinstance(string, str) or len(string) <= 1:
         return True
+
+    stack = []
 
     string = "".join(char.lower() for char in string if char.isalnum())
 
     for char in string:
-        s.push(char)
+        stack.append(char)
 
-    for i in range(len(string) // 2):
-        if s.pop() != string[len(string) - i - 1]:
+    while len(stack) > 1:
+        if stack.pop() != stack[-1]:
             return False
 
     return True
@@ -35,20 +34,17 @@ RETURNS: True if the string would be considered a palindrome, false otherwise
 
 
 def is_palindrome_queue(string):
-    q = Queue()
+    queue = []
 
-    if len(string) == 0:
-        return True
-
-    string = "".join(char.lower() for char in string if char.isalnum())
+    string = ''.join(char.lower() for char in string if char.isalnum())
 
     for char in string:
-        q.enqueue(char)
+        queue.insert(0, char)
 
-    while not q.is_empty():
-        if q.dequeue() != string[0]:
+    while len(queue) > 1:
+        if queue.pop() != queue[-1]:
             return False
-        string = string[1:]
+
     return True
 
 

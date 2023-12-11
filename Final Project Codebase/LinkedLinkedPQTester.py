@@ -4,7 +4,7 @@
 
 from LinkedLinkedPQ import LinkedLinkedPQ
 
-#10.1) Test the LinkedLinkedPQ constructor
+# 10.1) Test the LinkedLinkedPQ constructor
 print("------------------------------------------------------------")
 print("10.1) Test the LinkedLinkedPQ constructor")
 print("------------------------------------------------------------")
@@ -20,7 +20,7 @@ if pause:
 else:
     print()
 
-#10.2) Test accessing an empty LinkedLinkedPQ
+# 10.2) Test accessing an empty LinkedLinkedPQ
 print("------------------------------------------------------------")
 print("10.2) Test accessing an empty LinkedLinkedPQ")
 print("------------------------------------------------------------")
@@ -40,7 +40,7 @@ if pause:
 else:
     print()
 
-#10.3) Test the LinkedLinkedPQ add method with ints as keys
+# 10.3) Test the LinkedLinkedPQ add method with ints as keys
 print("------------------------------------------------------------")
 print("10.3) Test the LinkedLinkedPQ add method with ints keys")
 print("------------------------------------------------------------")
@@ -133,7 +133,7 @@ if pause:
 else:
     print()
 
-#10.4) Test the LinkedLinkedPQ min and remove_min methods
+# 10.4) Test the LinkedLinkedPQ min and remove_min methods
 print("------------------------------------------------------------")
 print("10.4) Test the LinkedLinkedPQ min and remove_min methods")
 print("------------------------------------------------------------")
@@ -211,7 +211,7 @@ if pause:
 else:
     print()
 
-#10.5) Test the LinkedLinkedPQ add method with floats as keys
+# 10.5) Test the LinkedLinkedPQ add method with floats as keys
 print("------------------------------------------------------------")
 print("10.5) Test the LinkedLinkedPQ add method floats as keys")
 print("------------------------------------------------------------")
@@ -261,7 +261,7 @@ if pause:
 else:
     print()
 
-#10.6) Test the LinkedLinkedPQ add method with strings as keys
+# 10.6) Test the LinkedLinkedPQ add method with strings as keys
 print("------------------------------------------------------------")
 print("10.6) Test the LinkedLinkedPQ add method strings as keys")
 print("------------------------------------------------------------")

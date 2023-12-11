@@ -39,22 +39,3 @@ class Stack_Interface(ABC):
         return len(self) == 0
 
 
-class Stack(Stack_Interface):
-    def __init__(self):
-        self.items = []
-
-    def push(self, value):
-        self.items.append(value)
-
-    def pop(self):
-        if self.is_empty():
-            raise IndexError("pop from empty stack")
-        return self.items.pop()
-
-    def peek(self):
-        if self.is_empty():
-            raise IndexError("peek on empty stack")
-        return self.items[-1]
-
-    def __len__(self):
-        return len(self.items)
