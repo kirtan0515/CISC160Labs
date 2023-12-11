@@ -38,3 +38,13 @@ class TwoDSequencePQ(PriorityQueue_Interface):
 
     def __len__(self):
         return self._length
+
+
+"""In this Python code, I implemented a priority queue named TwoDSequencePQ using a two-dimensional list structure. 
+The priority queue organizes elements based on their priority levels (keys). The add method inserts a new element 
+into the queue at the specified priority level, dynamically expanding the two-dimensional list if necessary. The min 
+method iterates over all priority levels and returns the minimum element along with its priority key. The remove_min 
+method removes and returns the minimum element, ensuring the priority queue remains organized. The class includes 
+methods to check if the queue is empty, get its length, and adheres to the required interface for a priority queue. 
+Priority levels are represented by the first dimension of the two-dimensional list, and each level contains a list of 
+elements with the same priority. """

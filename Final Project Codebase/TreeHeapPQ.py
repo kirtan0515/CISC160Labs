@@ -9,7 +9,7 @@ class TreeHeapPQ(PriorityQueue_Interface):
         self._length = 0
 
     def add(self, key, value):
-        #create a new node
+        # create a new node
         new_node = BinaryNode((key, value))
 
         if self.is_empty():
@@ -37,7 +37,7 @@ class TreeHeapPQ(PriorityQueue_Interface):
         self._length += 1
 
     def min(self):
-        #check if the tree is empty
+        # check if the tree is empty
         if self.root:
             # If not empty, return element of root node
             # Since this is a min-heap, the smallest element is at the root
@@ -54,9 +54,9 @@ class TreeHeapPQ(PriorityQueue_Interface):
         # root is the only node
         if self.root.get_left() is None and self.root.get_right() is None:
             self.root = None
-        #root has right child
+        # root has right child
         elif self.root.get_right():
-            #traverse to find the smallest node of the right subtree
+            # traverse to find the smallest node of the right subtree
             curr_parent = self.root
             curr = self.root.get_right()
             while curr.get_left():
@@ -64,7 +64,7 @@ class TreeHeapPQ(PriorityQueue_Interface):
                 curr = curr.get_left()
 
             min_node.element = curr.get_element()
-            #check if thecurrent node is the leaf
+            # check if thecurrent node is the leaf
             if curr.get_right() is None and curr.get_left() is None:
                 # Leaf node
                 if curr_parent == min_node:
@@ -105,3 +105,14 @@ class TreeHeapPQ(PriorityQueue_Interface):
 
     def __len__(self):
         return self._length
+
+
+"""In this Python code, I implemented a priority queue named `TreeHeapPQ` using a binary tree structure, specifically 
+a binary heap. It makes sure that the smallest element is at the root of the tree by keeping elements in a 
+hierarchical order. The 'add' method adds a new element to the heap while keeping the heap property. It does this by 
+going through the tree to find the right spot for the new node. The `min` method retrieves the minimum element from 
+the root of the heap without removing it. The'remove_min' method gets rid of the minimum element and returns it. It 
+makes sure that the heap property stays the same by changing the tree structure as needed. The class has methods  to 
+get the length of the stack and check if it is empty. It also has the right interface for a priority queue. A 
+"BinaryNode" class is used to represent the nodes in the binary tree. It stores key-value pairs, pointers to left and 
+right children, and the parent node. """
